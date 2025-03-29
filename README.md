@@ -31,4 +31,10 @@ The original intention of this project is to solve the large number of log files
 
 ## :bug:Test
 
+```
 Copy the log directory to the executable where you built the example
+
+# run example demo
+./build/example/exampleDemo
+```
+

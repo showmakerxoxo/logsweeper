@@ -1,0 +1,8 @@
+Log file created at: 2025/03/25 16:58:50
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 16:58:50.684808 12416 main.cpp:55] config.m_language: ru
+I0325 16:58:50.707394 12416 LogSweeper.cpp:157] setLogPath
+I0325 16:58:50.707443 12416 LogSweeper.cpp:50] setLogPath -> in_path: ./log/
+I0325 16:58:50.707451 12416 LogSweeper.cpp:172] start
+I0325 16:59:00.708134 12424 LogSweeper.cpp:125] operator() -> Deleted file: /home/showmaker/work/com_repo/public_lib/QxSerialportManager/demos/draw_waveform/build-build-Desktop_Qt_5_9_7_GCC_64bit-Default/log/DrawWaveformTool.localhost.localdomain.showmaker.log.INFO.20250325-153009.8723

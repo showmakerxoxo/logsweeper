@@ -1,0 +1,7 @@
+Log file created at: 2025/03/25 16:35:33
+Running on machine: localhost.localdomain
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 16:35:33.109452 10868 main.cpp:55] config.m_language: ru
+I0325 16:35:33.131214 10868 LogSweeper.cpp:157] setLogPath
+I0325 16:35:33.131240 10868 LogSweeper.cpp:50] setLogPath -> in_path: ./log/
+I0325 16:35:33.131246 10868 LogSweeper.cpp:172] start

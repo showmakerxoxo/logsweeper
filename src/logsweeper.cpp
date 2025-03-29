@@ -113,6 +113,7 @@ void LogSweeperImpl::_sweep() {
           stat(a.c_str(), &fa_stat);
           stat(b.c_str(), &fb_stat);
 
+#ifdef __linux__
           if (fa_stat.st_mtim.tv_sec > fb_stat.st_mtim.tv_sec) {
             return true;
           } else if (fa_stat.st_mtim.tv_sec == fb_stat.st_mtim.tv_sec) {
@@ -120,6 +121,15 @@ void LogSweeperImpl::_sweep() {
           } else {
             return false;
           }
+#elif __APPLE__
+          if (fa_stat.st_mtimespec.tv_sec > fb_stat.st_mtimespec.tv_sec) {
+            return true;
+          } else if (fa_stat.st_mtimespec.tv_sec == fb_stat.st_mtimespec.tv_sec) {
+            return fa_stat.st_mtimespec.tv_nsec > fb_stat.st_mtimespec.tv_nsec;
+          } else {
+            return false;
+          }
+#endif
         });
       };
 

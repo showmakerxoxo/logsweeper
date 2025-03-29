@@ -8,8 +8,8 @@ The original intention of this project is to solve the large number of log files
 
 ## :earth_asia:Envoirment 
 
-- OS: CentOS
-- Complier: g++ 4.8.5
+- OS: CentOS / MacOS
+- Complier: g++ 4.8.5 / clang 15.0.0
 
 ## 🛠️ Project Structure
 
@@ -35,6 +35,7 @@ The original intention of this project is to solve the large number of log files
 Copy the log directory to the executable where you built the example
 
 # run example demo
-./build/example/exampleDemo
+cd build/example
+./examplDemo
 ```
 

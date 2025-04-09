@@ -49,7 +49,7 @@ class LogSweeperImpl {
   /**
    * @brief _sweep
    * @note 保留每个日志级别（INFO、WARNING、ERROR）最近的 m_limitSize 条日志文件
-   *      -> log文件夹只会保留 3 * m_limitSize 条文件
+   *      -> log文件夹只会保留至多 3 * m_limitSize 条文件
    */
   void _sweep();
   void _stopAtOnce();
